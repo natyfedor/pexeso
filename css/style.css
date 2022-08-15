@@ -1,0 +1,99 @@
+body{
+    background-color:burlywood;
+}
+h1{
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+    color:rgb(97, 52, 20);
+    text-align: center;
+}
+#game{
+    width: 100%;
+    display: block;
+}
+#press{
+    z-index: 10;
+    position: absolute;
+    font-size: 52px;
+    font-weight: 900;
+    background-color: rgba(77, 83, 89,.9);
+    color: #97DB4F;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#win{
+    z-index: 10;
+    position: absolute;
+    font-size: 52px;
+    font-weight: 900;
+    color: #c1121f;
+    padding-left: 15%;
+    padding-top: 20%;
+    visibility: hidden;
+}
+#pexeso{
+    margin-left: 10%;
+    width: 66%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    float: left;
+   
+}
+#buttons{
+    width: 20%;
+    float: right;
+    padding-left: 4%;
+    padding-top: 25%;
+    min-height: 600px;
+}
+button{
+    display: block;
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:rgba(128, 128, 128, .75);
+}
+button:focus, button:hover{
+    background-color:rgba(128, 128, 128, 1);
+}
+
+h3{
+    float: left;
+    padding-right: 10px;
+}
+h2{
+    padding-top: 8.5%;
+    }
+.card{
+    margin: 2%;
+    width: 100px;
+    height: 100px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.card_hide{
+    visibility: hidden;
+}
+@media screen and (min-width: 800px) {
+    img{width: 150px; height: 150px;}
+    .card{width: 150px; height: 150px;}
+}
+@media screen and (min-width: 1100px){
+    #pexeso{width: 50%; margin-left: 25%;}
+    h2{padding-top: 6%;}
+    #win{
+        font-size: 64px;
+        font-weight: 900;
+        padding-left: 15%;
+        padding-top: 20%;
+      }  
+      #press{
+            font-size: 64px;
+            font-weight: 900;
+            margin-left: 10%;
+            margin-top: 15%;
+        }
+}
